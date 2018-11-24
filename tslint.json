@@ -38,10 +38,10 @@
         "arrow-parens": false,
         "object-literal-sort-keys": false,
         "no-unused-expression": false,
-        "max-classes-per-file": [
+        "variable-name": [
             false
         ],
-        "variable-name": [
+        "max-classes-per-file": [
             false
         ],
         "one-line": [

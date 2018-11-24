@@ -15,4 +15,13 @@ export class ProductService {
         const product = new this.model(model);
         return await product.save();
     }
+
+    async getById(id): Promise<ProductModel[]>{
+        const product = await this.model.find({_id: id}).exec();
+        return product;
+    }
+
+    async delete(id){
+        const product = await this.model.deleteOne({_id: id}).exec();
+    }
 }
