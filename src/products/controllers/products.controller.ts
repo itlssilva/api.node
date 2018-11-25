@@ -18,12 +18,12 @@ export class ProductsController {
         return this.service.get();
     }
 
-    @Get("getById")
+    @Get('getById')
     async getById(@Body() _id: string): Promise<ProductModel[]>{
         return this.service.getById(_id);
     }
 
-    @Post("delete")
+    @Post('delete')
     async delete(@Body() _id: string){
         this.service.delete(_id);
     }
